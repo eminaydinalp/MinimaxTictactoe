@@ -25,3 +25,5 @@ min_value : This function aims to choose the move that has the lowest utility va
 
 <img width="454" alt="Screenshot 2024-02-29 at 16 42 48" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/716db04e-149e-4e77-bc21-dcbdeddfe9d0">
 
+If it is O's turn , it tries to choose the move with O's lowest utility value. This is X's maximum value.
+
