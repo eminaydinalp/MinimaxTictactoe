@@ -8,3 +8,8 @@ The diagram below shows an example of minimax applied to a board position:
 
 
 <img width="819" alt="Screenshot 2024-02-29 at 16 01 34" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/cd6ab347-7b94-4b08-a6b6-707ac3346b6e">
+
+## Using Methods : 
+
+<img width="804" alt="Screenshot 2024-02-29 at 16 26 02" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/a9382390-fdb9-408e-af5c-2c812daeeaa5">
+
