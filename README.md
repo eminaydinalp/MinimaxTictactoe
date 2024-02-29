@@ -21,6 +21,7 @@ If it is X's turn, it tries to choose the move with the highest utility value of
 
 <img width="599" alt="Screenshot 2024-02-29 at 16 31 17" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/347ff373-d332-47cb-98eb-ff05a60b55da">
 
-min_value : 
+min_value : This function aims to choose the move that has the lowest utility value in the O row.
 
+<img width="454" alt="Screenshot 2024-02-29 at 16 42 48" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/716db04e-149e-4e77-bc21-dcbdeddfe9d0">
 
