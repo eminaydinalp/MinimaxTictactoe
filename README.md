@@ -19,16 +19,33 @@ When it comes to artificial intelligence, the minimax algorithm works :
 
 If it is X's turn, it tries to choose the move with the highest utility value of X. This is O's minimum value.
 
+
+
 <img width="599" alt="Screenshot 2024-02-29 at 16 31 17" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/347ff373-d332-47cb-98eb-ff05a60b55da">
+
+
 
 min_value : This function aims to choose the move that has the lowest utility value in the O row.
 
+
+
 <img width="454" alt="Screenshot 2024-02-29 at 16 42 48" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/716db04e-149e-4e77-bc21-dcbdeddfe9d0">
+
+
 
 If it is O's turn , it tries to choose the move with O's lowest utility value. This is X's maximum value.
 
-<img width="476" alt="Screenshot 2024-02-29 at 16 45 45" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/fdfde449-9cb7-4ed9-820d-0d9ce6a2b9ed">
+
+
+<img width="578" alt="Screenshot 2024-02-29 at 16 45 19" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/c98015e1-04c1-4052-a2c6-c26ca28814dd">
+
+
 
 max_value : This function aims to choose the move with the highest utility value in order X.
+
+
+
+<img width="476" alt="Screenshot 2024-02-29 at 16 45 45" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/fdfde449-9cb7-4ed9-820d-0d9ce6a2b9ed">
+
 
 
