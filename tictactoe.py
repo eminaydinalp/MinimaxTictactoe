@@ -66,8 +66,9 @@ def terminal(board):
     """
     Returns True if game is over, False otherwise.
     """
-    return winner(board) is not None or all(all(cell is not EMPTY for cell in row) for row in board)
 
+    #We look at all points one by one and return true if there is no empty space, false if there is.
+    return winner(board) is not None or all(all(cell is not EMPTY for cell in row) for row in board)
 
 def utility(board):
     """
@@ -82,15 +83,18 @@ def utility(board):
         return 0
 
 
+# This function contains the main logic of the Minimax algorithm and aims to choose the best move in the current state of the game.
 def minimax(board):
     """
     Returns the optimal action for the current player on the board.
     """
+    # First, it checks whether the game is over or not with the terminal(board) function. If the game is over  it returns None.
     if terminal(board):
         return None
 
-    curr_player = player(board)
+    curr_player = player(board) # Determines the next player.
 
+    # If it is X's turn, it tries to choose the move with the highest utility value of X. It uses the max_value function for this.
     if curr_player == X:
         best_value = -math.inf
         best_move = None
@@ -99,6 +103,7 @@ def minimax(board):
             if value > best_value:
                 best_value = value
                 best_move = action
+    # If it is O's turn , it tries to choose the move with O's lowest utility value. It uses the min_value function for this.
     else:
         best_value = math.inf
         best_move = None
@@ -108,22 +113,24 @@ def minimax(board):
                 best_value = value
                 best_move = action
 
-    return best_move
+    return best_move # Finally, it returns the best move chosen.
 
 
+# This function aims to choose the move with the highest utility value in order X.
 def max_value(board):
     if terminal(board):
         return utility(board)
     v = -math.inf
     for action in actions(board):
-        v = max(v, min_value(result(board, action)))
-    return v
+        v = max(v, min_value(result(board, action))) # For each move, it evaluates the other player's (O's) worst case by calling the min_value function.
+    return v # It selects the move with the highest utility value and returns this value.
 
 
+# This function aims to choose the move that has the lowest utility value in the O row.
 def min_value(board):
     if terminal(board):
         return utility(board)
     v = math.inf
     for action in actions(board):
-        v = min(v, max_value(result(board, action)))
-    return v
+        v = min(v, max_value(result(board, action))) # For each move, it evaluates the other player's (X's) best situation by calling the max_value function.
+    return v # It selects the move with the lowest utility value and returns this value.
