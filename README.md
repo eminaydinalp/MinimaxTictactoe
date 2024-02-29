@@ -17,5 +17,7 @@ The diagram below shows an example of minimax applied to a board position:
 
 When it comes to artificial intelligence, the minimax algorithm works : 
 
+If it is X's turn, it tries to choose the move with the highest utility value of X. This is O's minimum value.
 
+<img width="599" alt="Screenshot 2024-02-29 at 16 31 17" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/347ff373-d332-47cb-98eb-ff05a60b55da">
 
