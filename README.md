@@ -13,3 +13,9 @@ The diagram below shows an example of minimax applied to a board position:
 
 <img width="804" alt="Screenshot 2024-02-29 at 16 26 02" src="https://github.com/eminaydinalp/MinimaxTictactoe/assets/59748099/a9382390-fdb9-408e-af5c-2c812daeeaa5">
 
+# MINIMAX Algorithm
+
+When it comes to artificial intelligence, the minimax algorithm works : 
+
+
+
